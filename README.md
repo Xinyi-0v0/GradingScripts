@@ -31,7 +31,7 @@ please don't close the terminal until all works are done
 ### Update multiple repositories and checkout to one specific branch (main or assignment branch) 
 since we have all repositories in one directory now, we can pull the newest change at once
 - prepare the script checkoutAndPull.sh, make sure it's executable
-- enter the directory and put the .sh file in this directory
+- enter the directory and put the checkoutAndPull.sh file in this directory
 - run the script 
 ```
 ./updateLocalRepo.sh branch_nam
@@ -45,14 +45,24 @@ Common Waring:
   - It's because the student named the branch differently, you need to manually update this repo. 
 - "fatal: Need to specify how to reconcile divergent branches.
   error: Your local changes to the following files would be overwritten by checkout:"
-  - It's because you made some change to student's repo. You need to manually discard the change, by using
-  ```
-  git reset --hard
-  ```
-  under in that repo. 
+  - It's because you made some change to student's repo. You need to manually discard the change, by using the following code under in that repo. 
+      ```
+      git reset --hard
+      ```
+
   
 please don't close the terminal until all works are done
 
+### Install all dependencies for multiple directory
+- prepare the script installDependencies.sh, make sure it's executable
+- enter the directory(containing all repos) and put the installDependencies.sh file in this directory
+- run the script 
+```
+# assignment
+./updateLocalRepo.sh work/assignment_dir_name
 
+# project
+./updateLocalRepo.sh project1
+```
 
 If you have any questions or any suggestions, welcome to email me: zhang.xinyi17@northeastern.edu
