@@ -34,7 +34,7 @@ since we have all repositories in one directory now, we can pull the newest chan
 - enter the directory and put the checkoutAndPull.sh file in this directory
 - run the script 
 ```
-./updateLocalRepo.sh branch_nam
+./updateLocalRepo.sh branch_name
 ```
 
 pay attention to the warning message in terminal:
