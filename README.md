@@ -28,35 +28,31 @@ the output should be like "rwxrwxr-x@ 1 zhangxinyi staff 12 Feb 2 09:34 myscript
 ```
 please don't close the terminal until all works are done
 
-### Update multiple repositories
+### Update multiple repositories and checkout to one specific branch (main or assignment branch) 
 since we have all repositories in one directory now, we can pull the newest change at once
-- prepare the script updateLocalRepo.sh, make sure it's executable
+- prepare the script checkoutAndPull.sh, make sure it's executable
 - enter the directory and put the .sh file in this directory
 - run the script 
 ```
-./updateLocalRepo.sh
-```
-please don't close the terminal until all works are done
-
-### checkout to one specific branch (main or assignment branch)
-- prepare the script checkoutBranch.sh , make sure it's executable
-- enter the directory and put the .sh file in this directory
-- run the script 
-```
-./checkoutBranch branch_name
+./updateLocalRepo.sh branch_nam
 ```
 
 pay attention to the warning message in terminal:
 
-
-it would tell you which directory doesn't have the assignment branch. (Maybe it's because the student named the branch differently ) 
+it would tell you which directory doesn't update successfully. 
+Common Waring:
+- " seainfo...  doesn't have this branch."
+  - It's because the student named the branch differently, you need to manually update this repo. 
+- "fatal: Need to specify how to reconcile divergent branches.
+  error: Your local changes to the following files would be overwritten by checkout:"
+  - It's because you made some change to student's repo. You need to manually discard the change, by using
+  ```
+  git reset --hard
+  ```
+  under in that repo. 
+  
 please don't close the terminal until all works are done
 
-
-Using updateLocalRepo.sh and checkoutBranch.sh can only pull all changes of main branch and the new branch(which didn't exist locally before). If you use it after due date, it won‘t cause problem, because students normally won’t update their assignment after due date. 
-
-For example, if Jack creates a assignment branch and submit his assignment on Feb 2. After you using this script, you can get all changes in main and assignment branch.
-But if Jack makes new commits to the assignment branch after the time you use checkoutBranch.sh, you can only get the new change by pull the branch from remote repository separately, updateLocalRepo.sh won't work.
 
 
 If you have any questions or any suggestions, welcome to email me: zhang.xinyi17@northeastern.edu
