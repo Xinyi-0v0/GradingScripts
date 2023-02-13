@@ -59,10 +59,12 @@ please don't close the terminal until all works are done
 - run the script 
 ```
 # assignment
-./updateLocalRepo.sh work/assignment_dir_name
+./installDependencies.sh work/assignment_dir_name
 
 # project
-./updateLocalRepo.sh project1
+./installDependencies.sh project1
 ```
+
+### Example
 
 If you have any questions or any suggestions, welcome to email me: zhang.xinyi17@northeastern.edu
