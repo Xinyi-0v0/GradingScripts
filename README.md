@@ -20,9 +20,9 @@ the output should be like "rwxrwxr-x@ 1 zhangxinyi staff 12 Feb 2 09:34 myscript
 ### Clone multiple repositories at once
 - create a txt file named repositories 
 - add all repositories link you want to clone (just like below)
-![Screenshot 2023-02-02 at 12 03 31 PM](https://user-images.githubusercontent.com/98198407/216437592-f24da816-febc-45e8-bbd5-3182e2be775f.png)
+  - ![Screenshot 2023-02-02 at 12 03 31 PM](https://user-images.githubusercontent.com/98198407/216437592-f24da816-febc-45e8-bbd5-3182e2be775f.png)
 - make sure the gitCloneMultipleRepositories.sh and repositories.txt in a same directory
--run the script under the directory
+- run the script under the directory
 ```
 ./gitCloneMultipleRepositories.sh 
 ```
