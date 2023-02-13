@@ -37,9 +37,7 @@ since we have all repositories in one directory now, we can pull the newest chan
 ./updateLocalRepo.sh branch_name
 ```
 
-pay attention to the warning message in terminal:
-
-it would tell you which directory doesn't update successfully. 
+pay attention to the warning message in terminal: it would tell you which directory doesn't update successfully. 
 Common Waring:
 - " seainfo...  doesn't have this branch."
   - It's because the student named the branch differently, you need to manually update this repo. 
